@@ -10,22 +10,6 @@
   clear:both;
 }
 
-.header {
-  width: 100%; /* 横幅 */
-  height: 120px; /* 高さ */
-  background-color: red; /* 背景色 */
-}
-.header-top{
-  width: 100%; /* 横幅 */
-  height: 70px; /* 高さ */
-  background-color: hotpink; /* 背景色 */
-}
-.header-bottom{
-  width: 100%; /* 横幅 */
-  height: 50px; /* 高さ */
-  background-color: pink; /* 背景色 */
-}
-
 .main-visual {
   width: 100%; /* 横幅 */
   height: 300px; /* 高さ */
@@ -54,10 +38,4 @@
   height: 1400px;
   background-color: palegreen;
   float: left; /* 要素を左揃えで並べる */
-}
-
-.footer {
-  width: 100%; /* 横幅 */
-  height: 120px; /* 高さ */
-  background-color: blue; /* 背景色 */
 }

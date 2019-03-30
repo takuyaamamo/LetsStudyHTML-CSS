@@ -38,12 +38,14 @@ header .headline{
 .main-visual {
   width: 100%; /* 横幅 */
   height: 300px; /* 高さ */
-
+  background-image: url(img/mv.jpg);
+  background-size: cover;
+  background-position: center;
 }
 .main-visual-content{
-  width: 350px; /* 横幅を指定 */
+  width: 40%; /* 横幅を指定 */
   height: 300px; /* 親の高さに揃える */
-
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .main {

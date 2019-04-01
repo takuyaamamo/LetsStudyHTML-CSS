@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  width: 960px;
+  margin: 50px auto;
+  }
+
+.box {
+  float: left;
+  width: 300px;
+  padding: 10px;
+  border: solid 1px grey;
+  position: relative;
+}
+.box:nth-child(1) {
+  margin-right: 30px;
+}
+.box:nth-child(2) {
+  margin-right: 30px;
+}
+
+.step-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 2;
+  font-weight: bold;
+  color: white;
+  background-color: orange;
+}
+img {
+  width: 280px;
+}

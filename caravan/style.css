@@ -15,13 +15,16 @@ a {
 header, nav, h2, .main-visual, footer {
   font-family: Chalkduster, "Bradley Hand", Courier, "Segoe Print", sans-serif;
 }
+
 header {
   position: relative;
-  width: 90%;
+  width: 90%;/* 横幅 */
   padding: 15px 0;
+  /* 中央寄せ（余白がないとできない） */
   margin: 0 auto;
   text-align: center;
 }
+/* クラス名headerのタグ内のh1にのみ適応される */
 header .headline {
   font-size: 32px;
 }
@@ -46,33 +49,33 @@ header .headline {
 }
 .main-visual {
   width: 100%;
-  height: 300px;
+  height: 300px;/* 高さ */
   background-image: url(img/mv.jpg);
-  background-size: cover;
-  background-position: center;
+  background-size: cover;/* 縦横比を維持したまま背景の表示領域を覆うように表示 */
+  background-position: center;/* 背景画像を中央に配置 */
 }
 .main-visual-content {
-  width: 40%;
-  height: 300px;
-  background: rgba(0,0,0,0.5);
-  text-align: center;
-  padding-top: 105px;
+  width: 40%;/* 横幅を指定 */
+  height: 300px;/* 親の高さに揃える */
+  background: rgba(0,0,0,0.5);/* 背景色を半透明の黒にする */
+  text-align: center/* 文字を真ん中に寄せる */
+  padding-top: 105px/* 上側の内側の余白で垂直方向の位置を調整 */
 }
 .main-visual-text {
-  color: #fff;
+  color: #fff;/* 文字色を白に変更 */
 }
 .main-visual-name {
-  margin-top: 30px;
+  margin-top: 30px;/* 上側の外側の余白 */
   color: #fff;
 }
 main {
   width: 800px;
-  margin: 0 auto;
-  padding: 70px 0;
+  margin: 0 auto;/* 箱の中央寄せ */
+  padding: 70px 0;/* 上下に70px、左右に0pxの枠の内側の余白 */
 }
 .blog {
   width: 540px;
-  float: left;
+  float: left;/* 要素を左揃えで並べる */
   margin-right: 30px;
 }
 .blog-headline {
@@ -107,7 +110,7 @@ main {
 .category {
   display: inline-block;
   padding: 5px 8px;
-  background-color: #acabab;
+  background-color: #acabab; /* 背景色 */
   border-radius: 3px;
   color: #fff;
   font-size: 11px;
@@ -185,4 +188,51 @@ footer {
 }
 .footer-text {
   color: #fff;
+}
+
+/* スマートフォンサイズ(768px)程度の画面の大きさ以下に適用される設定です */
+@media screen and (max-width:768px) {
+  .social {
+    display: none;
+  }
+  header, .nav-list, .nav-list-item, main, .main-visual-content, .main, .blog, .sidebar, footer {
+    width: 100%;
+  }
+  .blog, .sidebar {
+    float: none;
+  }
+  .nav-list-item {
+    margin: 0 0 10px 0;
+  }
+  .bolg {
+    margin: 0;
+  }
+  .blog-box {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .blog-image {
+    width: 49%;
+  }
+  .blog-text {
+    width: 49%;
+    padding-top: 5px;
+  }
+  .sidebar {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .sidebar-contents {
+    margin: 0 auto;
+  }
+  .instagram-box {
+    width: 48%;
+    padding-top: 48%;
+  }
+  .instagram-box:nth-child(odd) {
+    margin-right: 4%;
+  }
+  .pagination {
+   margin-bottom: 50px;
+  }
 }

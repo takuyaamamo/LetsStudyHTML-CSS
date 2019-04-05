@@ -2,7 +2,9 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>10章【Webページを作成してみよう】</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -18,8 +20,10 @@
             <li>Profile</li>
             <li>Contact</li>
           </ul>
+          <i class="fas fa-bars"></i>
         </nav>
       </div>
+    </header>
 
       <!-- メインビジュアル部分 -->
       <main>
@@ -28,8 +32,8 @@
       </main>
 
       <!-- ポートフォリオ部分 -->
-      <section>
-        <div class="section-box">
+      <section class="portfolio">
+        <div class="section-portfolio">
           <h2>Portfolio</h2>
           <hr>
           <p>
@@ -45,9 +49,92 @@
             <div class="portfolio-image"></div>
             <div class="portfolio-image"></div>
           </div>
-        </section>
         </div>
+      </section>
 
-    </header>
+      <!-- フィーチャー部分 -->
+      <section>
+        <div class="section-feature">
+          <h2>Feature</h2>
+          <hr>
+          <p>
+            It is a long established fact that a reader will be distracted by the readable<br>
+            content of a page when looking at its layout.<br>
+            The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
+          </p>
+          <div class="feature-box">
+            <i class="fas fa-code"></i>
+            <h3>Strength1</h3>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur</p>
+          </div>
+          <div class="feature-box">
+            <i class="fas fa-desktop"></i>
+            <h3>Strength2</h3>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur</p>
+          </div>
+          <div class="feature-box">
+            <i class="fas fa-cogs"></i>
+            <h3>Strength3</h3>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur</p>
+          </div>
+        </div>
+      </section>
+      <!-- プロフィール部分 -->
+      <section>
+        <div class="section-profile">
+          <h2>Prifile</h2>
+          <hr>
+          <p>
+            It is a long established fact that a reader will be distracted by the readable<br>
+            content of a page when looking at its layout.<br>
+            The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
+          </p>
+          <div class="profile-left">
+            <div class="profile-image"></div>
+          </div>
+          <div class="profile-right">
+            <h3>MyName</h3>
+            <p>
+              Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur
+            </p>
+            <h3>MySkills</h3>
+            <p>
+              HTML/CSS,JavaScript,JQuery,PhotoShop
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- コンタクト部分 -->
+      <section>
+        <div class="section-contact clearfix">
+          <h2>Contact</h2>
+          <p>
+            It is a long established fact that a reader will be distracted by the readable<br>
+            content of a page when looking at its layout.<br>
+            The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
+          </p>
+          <div class="contact-center">
+            <div class="contact-left">
+              <h3>Mail</h3>
+              <a href="#">xxx@xxx.com</a>
+              <h3>Tell</h3>
+              <a href="#">000-0000-0000</a>
+            </div>
+            <div class="contact-right">
+              <h3>SNS</h3>
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- フッター -->
+      <footer>
+        <p>©2017 webcamp</p>
+      </footer>
+
   </body>
 </html>
